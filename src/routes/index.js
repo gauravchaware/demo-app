@@ -12,8 +12,8 @@ const Routes = () => {
       <AppLayout>
         <Suspense fallback={<Loading />}>
           <Switch>
-            <Route path="/users" component={Users} />
-            <Redirect to={"/users"} />
+            <Route path="/" component={Users} />
+            <Redirect to={"/"} />
           </Switch>
         </Suspense>
       </AppLayout>

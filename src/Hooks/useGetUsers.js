@@ -22,6 +22,7 @@ const useGetUsers = () => {
 
   useEffect(() => {
     if (!loading) {
+      console.log("in");
       const userDataWithLogs = combineUsersLog(userData, Logs);
       setUserData(userDataWithLogs);
     }
